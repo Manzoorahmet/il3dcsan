@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Infinity 3D Scan</title>
+        <link type="image/png" rel="icon" href="/img/logo/favicon.png" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.datatables.net/fixedheader/3.1.7/css/fixedHeader.bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.datatables.net/responsive/2.2.5/css/responsive.bootstrap.min.css"
+        />
+
+        <link rel="stylesheet" href="/style-d/main.css" />
+    </head>
+    <body>
+
+        <!-- Form -->
+        <section class="dashboard__login">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-5 m-auto">
+                        <div class="login-card">
+                            <img src="/img/logo/favicon.png" alt="" />
+                            <p>Verify as an Admin</p>
+                            <form method="POST" action="/admin/verify">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1"
+                                        >Unique ID</label
+                                    >
+                                    <input
+                                        type="text"
+                                        name="id"
+                                        class="form-control"
+                                        id="exampleInputEmail1"
+                                        aria-describedby="emailHelp"
+                                    />
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn">
+                                        Verify
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- /Form -->
+
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
