@@ -72,6 +72,8 @@ app.get('/', (req, res) => [
    
 ])
 
+
+// Show 3D view
 app.get('/view/:appointid/:imageid/', (req, res) => {
     // res.render('show')
     Appointment.findById(req.params.appointid).then(appointment => {
@@ -87,20 +89,6 @@ app.get('/view/:appointid/:imageid/', (req, res) => {
         }
     }).catch(err => console.log(err))
 })
-
-app.post('/admin/info', (req, res) => [
-    Date.findOne({date: req.body.date}).then(date => {
-        var arr = ['8AM', '9AM', '10AM', '11AM', '12PM', '1PM', '2PM', '3PM', '4PM', '5PM']
-        if(!date){
-           return httpMsgs.sendJSON(req, res, {
-                from: arr
-            })
-        }
-        httpMsgs.sendJSON(req, res, {
-            from: date.availableTime
-        }) 
-    }).catch(err => console.log(err))
-])
 
 
 app.use("/", require("./routes/orders"));

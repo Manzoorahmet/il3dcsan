@@ -9,10 +9,6 @@ const Admin = require('../models/Admin')
 
 const { ensureAuthenticated } = require('../config/auth')
 
-// 5f4f26e28cda5b0c10ebc62b
-// akashreddy@3D
-// iamadmin
-
 // Multer Congig
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
@@ -22,19 +18,6 @@ const storage = multer.diskStorage({
         cb(null, file.originalname);
     },
 });
-
-// const fileFilter = (req, file, cb) => {
-//     if (
-//         file.mimetype === "image/jpeg" ||
-//         file.mimetype === "image/png" ||
-//         file.mimetype === "image/jpg" ||
-//         file.mimetype === "image/insp"
-//     ) {
-//         cb(null, true);
-//     } else {
-//         cb(null, false);
-//     }
-// };
 
 const upload = multer({
     storage: storage,
