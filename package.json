@@ -23,7 +23,7 @@
     "http-msgs": "^1.0.9",
     "mongoose": "^5.10.2",
     "multer": "^1.4.2",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "nodemailer": "^6.4.11",
     "nodemon": "^2.0.4",
     "passport": "^0.4.1",
